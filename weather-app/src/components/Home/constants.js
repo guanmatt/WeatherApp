@@ -197,3 +197,45 @@ export const COUNTRIES = [
 	"Zambia",
 	"Zimbabwe",
 ];
+
+export const SAMPLE_RESPONSE = `{
+    "location": {
+        "name": "Ottawa",
+        "region": "Ontario",
+        "country": "Canada",
+        "lat": 45.42,
+        "lon": -75.7,
+        "tz_id": "America/Toronto",
+        "localtime_epoch": 1677986407,
+        "localtime": "2023-03-04 22:20"
+    },
+    "current": {
+        "last_updated_epoch": 1677986100,
+        "last_updated": "2023-03-04 22:15",
+        "temp_c": -1,
+        "temp_f": 30.2,
+        "is_day": 0,
+        "condition": {
+            "text": "Overcast",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+            "code": 1009
+        },
+        "wind_mph": 2.2,
+        "wind_kph": 3.6,
+        "wind_degree": 10,
+        "wind_dir": "N",
+        "pressure_mb": 1015,
+        "pressure_in": 29.97,
+        "precip_mm": 0,
+        "precip_in": 0,
+        "humidity": 100,
+        "cloud": 100,
+        "feelslike_c": -3.8,
+        "feelslike_f": 25.2,
+        "vis_km": 19,
+        "vis_miles": 11,
+        "uv": 1,
+        "gust_mph": 7.6,
+        "gust_kph": 12.2
+    }
+}`

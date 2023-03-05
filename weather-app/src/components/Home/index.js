@@ -1,15 +1,17 @@
 import React from "react";
 
-import { API_KEY, COUNTRIES } from "./constants";
-import { getCountryTemperature } from "./helpers";
+import { API_KEY, COUNTRIES, SAMPLE_RESPONSE } from "./constants";
+import { getCountryData, getTwoUniqueCountries, getTemperatureFromCountryData } from "./helpers";
 
 const Home = () => {
 	return (
 		<div>
 			<div>Hello</div>
-			<button onClick={() => getCountryTemperature("Canada")}>
-				I love everyone equally
+			<button onClick={() => getCountryData("Canada")}>
+				Get country data!
 			</button>
+			<button onClick={() => getTwoUniqueCountries()}>Get 2 countries!</button>
+			<button onClick={() => getTemperatureFromCountryData(SAMPLE_RESPONSE)}>Parse a response</button>
 		</div>
 	);
 };
