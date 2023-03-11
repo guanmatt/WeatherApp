@@ -1,0 +1,31 @@
+@mixin section {
+	position: fixed;
+	right: 0;
+	left: 0;
+
+	height: 45vh;
+	width: 100vw;
+
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	border-width: 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+.section-top {
+	@include section;
+	top: 10vh;
+	bottom: 55vh;
+	background-color: purple;
+}
+
+.section-bottom {
+	@include section;
+	top: 55vh;
+	bottom: 0;
+	background-color: blue;
+}

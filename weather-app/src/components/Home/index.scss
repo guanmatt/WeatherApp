@@ -1,0 +1,23 @@
+.home {
+	img {
+		display: block;
+		max-width: 372px;
+		max-height: 372px;
+		height: auto;
+		width: auto;
+	}
+}
+
+.section-container {
+	div {
+		position: absolute;
+		top: 20vh;
+		right: 0;
+		left: 0;
+		bottom: 0;
+
+		display: flex;
+		height: 80vh;
+		width: 100vw;
+	}
+}
